@@ -1,0 +1,103 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Express API Documentation",
+    "version": "1.0.0",
+    "description": "API documentation for the Express app"
+  },
+  "paths": {
+    "/monday": {
+      "get": {
+        "summary": "Gets the menu for monday.",
+        "responses": {
+          "200": {
+            "description": "sucessful Menu for monday."
+          },
+          "500": {
+            "description": "Internal Server Error."
+          }
+        }
+      }
+    },
+    "/tuesday": {
+      "get": {
+        "summary": "Gets the menu for Tuesday.",
+        "responses": {
+          "200": {
+            "description": "sucessful Menu for tuesday."
+          },
+          "500": {
+            "description": "Internal Server Error."
+          }
+        }
+      }
+    },
+    "/wednesday": {
+      "get": {
+        "summary": "Gets the menu for Wednesday.",
+        "responses": {
+          "200": {
+            "description": "sucessful Menu for Wednesday."
+          },
+          "500": {
+            "description": "Internal Server Error."
+          }
+        }
+      }
+    },
+    "/Thursday": {
+      "get": {
+        "summary": "Gets the menu for thursday.",
+        "responses": {
+          "200": {
+            "description": "sucessful Menu for thursday."
+          },
+          "500": {
+            "description": "Internal Server Error."
+          }
+        }
+      }
+    },
+    "/Friday": {
+      "get": {
+        "summary": "Gets the menu for friday.",
+        "responses": {
+          "200": {
+            "description": "sucessful Menu for friday."
+          },
+          "500": {
+            "description": "Internal Server Error."
+          }
+        }
+      }
+    },
+    "/fetFeedbacks": {
+      "get": {
+        "summary": "Gets all the feedbacks.",
+        "responses": {
+          "200": {
+            "description": "Gets all the feedbacks."
+          },
+          "500": {
+            "description": "Internal Server Error."
+          }
+        }
+      }
+    },
+    "/feedback": {
+      "post": {
+        "summary": "Submit feedback.",
+        "responses": {
+          "200": {
+            "description": "Submit feedback and store in json."
+          },
+          "500": {
+            "description": "Internal Server Error."
+          }
+        }
+      }
+    }
+  },
+  "components": {},
+  "tags": []
+}

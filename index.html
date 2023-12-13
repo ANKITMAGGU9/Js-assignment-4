@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSCC Cafeteria Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="main.js"></script>
+  <h1>NSCC Cafeteria Menu</h1>
+
+  <label for="day">Select a Day:</label>
+  <select id="day">
+    <option value="monday">Monday</option>
+    <option value="tuesday">Tuesday</option>
+    <option value="wednesday">Wednesday</option>
+    <option value="thursday">Thursday</option>
+    <option value="friday">Friday</option>
+  </select>
+
+  <button onclick="getFoodItems()">Show Food Items</button>
+
+  <div class="food-items" id="foodItemsContainer">
+    <!-- Food items will be displayed here -->
+  </div>
+
+  <form id="myForm" onsubmit="postData(event)">
+    <h1>Feedback Form</h1>
+
+    <label for="feedback">Your Feedback:</label>
+    <textarea id="feedbackText" name="feedback" placeholder="Type your feedback here..."></textarea>
+
+    <input id="feedback"  type="submit" value="Submit Feedback">
+  </form>
+  <div>
+    <button onclick="getFeedbacks()">Show All Feedbacks</button>
+  </div>
+  
+  <div class="feedback-items" id="feedbackContainer">
+    
+  </div>
+</body>
+</html>
