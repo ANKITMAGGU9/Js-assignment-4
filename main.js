@@ -2,7 +2,7 @@ function getFoodItems() {
     const day = document.getElementById('day').value;
 
     // API endpooint
-    const apiEndpoint = "http://localhost:80/" + day;
+    const apiEndpoint = "https://9q9enbgi5c.execute-api.us-east-2.amazonaws.com/prod/" + day;
     fetchDataAndDisplay(apiEndpoint);
 
 
